@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>唐慧玲 - 新媒体运营简历</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4F46E5',
+            accent: '#F59E0B',
+            light: '#F8FAFC',
+            dark: '#1E293B'
+          },
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans SC', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    .font-display {
+      font-family: 'Montserrat', 'Inter', sans-serif;
+      letter-spacing: -0.02em;
+    }
+    .navbar {
+      background: rgba(248, 250, 252, 0.95);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .nav-link {
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #4F46E5;
+      font-weight: 500;
+    }
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(79, 70, 229, 0.1);
+    }
+    .avatar img {
+      transition: transform 0.3s ease;
+    }
+    .avatar img:hover {
+      transform: scale(1.05);
+    }
+    @media (max-width:768px) {
+      .nav-menu { display: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-light text-dark">
+
+<nav class="navbar fixed top-0 w-full z-50 transition-all duration-300 py-3">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <div class="text-xl font-bold font-display text-primary">Tang Huiling</div>
+    <ul class="nav-menu flex gap-6">
+      <li><a href="#home" class="nav-link text-dark">首页 🏠</a></li>
+      <li><a href="#education" class="nav-link text-dark">教育 📚</a></li>
+      <li><a href="#experience" class="nav-link text-dark">实习 💼</a></li>
+      <li><a href="#project" class="nav-link text-dark">项目 🚀</a></li>
+      <li><a href="#skill" class="nav-link text-dark">技能 🛠️</a></li>
+      <li><a href="#contact" class="nav-link text-dark">联系 📞</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20">
+  <div class="hero-content max-w-3xl">
+    <div class="avatar mb-6">
+      <img 
+        src="https://raw.githubusercontent.com/7-Lavender/pic/main/resume%20pic.jpg"
+        alt="唐慧玲" 
+        class="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-white shadow-xl"
+      >
+    </div>
+    <h1 class="text-5xl md:text-7xl font-bold font-display mb-4 text-dark">
+      Hi, I'm <span class="text-primary">唐慧玲</span> 👋
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-600 mb-8">
+      网络营销与直播电商 | 新媒体运营 ✨
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#experience" class="px-6 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition">
+        查看我的简历 📄
+      </a>
+      <a href="#contact" class="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition">
+        联系我 📩
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="py-20 px-4 bg-white">
+  <div class="container mx-auto max-w-4xl">
+    <h2 class="text-3xl md:text-4xl font-bold font-display mb-12 text-center text-dark">
+      📚 教育经历
+    </h2>
+    <div class="card p-6 rounded-xl shadow-sm bg-white border border-gray-100">
+      <div class="flex flex-col md:flex-row justify-between mb-2">
+        <h3 class="font-bold text-xl text-primary">顺德职业技术大学</h3>
+        <span class="text-gray-500">2024.09 - 2027.06</span>
+      </div>
+      <p class="text-gray-600 mb-2 text-lg">网络营销与直播电商</p>
+      <p class="mb-3">GPA：4.10/5.0（专业前15%） 🎯</p>
+      <ul class="mt-2 list-disc pl-5 text-gray-600 space-y-2">
+        <li>主修：新媒体运营、短视频创作、电商直播策划、数据分析</li>
+        <li>校园新媒体运营，3场活动直播，单场最高5000人次 🎥</li>
+        <li>校级一等奖学金、三好学生、挑战杯校赛银奖 🏆</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="py-20 bg-light px-4">
+  <div class="container mx-auto max-w-4xl">
+    <h2 class="text-3xl md:text-4xl font-bold font-display mb-12 text-center text-dark">
+      💼 实习经历
+    </h2>
+    <div class="card p-6 rounded-xl shadow-sm bg-white border border-gray-100">
+      <div class="flex flex-col md:flex-row justify-between mb-2">
+        <h3 class="font-bold text-xl text-primary">佛山市广盈收农业科技有限公司</h3>
+        <span class="text-gray-500">2025.12 - 2026.02</span>
+      </div>
+      <p class="text-gray-600 mb-4 text-lg">中控 / 助播</p>
+      <ul class="list-disc pl-5 space-y-2 text-gray-700">
+        <li>直播设备调试、商品上架、价格设置，保障2小时直播流程 ⚙️</li>
+        <li>配合主播互动讲解，实时回复问题，提升互动率47.3% 💬</li>
+        <li>数据记录复盘，参与12场直播，总销售额8万+ 📊</li>
+        <li>平均观看时长较初期提升51.2% ⏱️</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="project" class="py-20 px-4 bg-white">
+  <div class="container mx-auto max-w-4xl">
+    <h2 class="text-3xl md:text-4xl font-bold font-display mb-12 text-center text-dark">
+      🚀 项目经历
+    </h2>
+    <div class="card p-6 rounded-xl shadow-sm bg-white border border-gray-100">
+      <h3 class="font-bold text-xl text-primary mb-2">挑战杯 - 珍稀蝴蝶兰全产业链振兴计划</h3>
+      <p class="text-gray-600 mb-4">媒体运营 | 2025.12-2026.02</p>
+      <ul class="list-disc pl-5 space-y-2 text-gray-700">
+        <li>搭建抖音/小红书矩阵，直播曝光1000-3000人次 📱</li>
+        <li>制作切片、物料，单场直播销售额3000-10000元 💰</li>
+        <li>公域转私域引流，支撑团队年销售额破10万 🚰</li>
+        <li>校企合作与乡村振兴品牌宣传 🌱</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skill" class="py-20 bg-light px-4">
+  <div class="container mx-auto max-w-4xl">
+    <h2 class="text-3xl md:text-4xl font-bold font-display mb-12 text-center text-dark">
+      🛠️ 专业技能
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="p-5 rounded-lg bg-white shadow-sm border border-gray-100">
+        <h4 class="font-bold text-lg text-primary mb-2">多平台运营 📱</h4>
+        <p class="text-gray-600">公众号、抖音、小红书、B站内容发布</p>
+      </div>
+      <div class="p-5 rounded-lg bg-white shadow-sm border border-gray-100">
+        <h4 class="font-bold text-lg text-primary mb-2">内容创作 ✍️</h4>
+        <p class="text-gray-600">文案、脚本、剪映/PS/Pr基础制作</p>
+      </div>
+      <div class="p-5 rounded-lg bg-white shadow-sm border border-gray-100">
+        <h4 class="font-bold text-lg text-primary mb-2">数据分析 📊</h4>
+        <p class="text-gray-600">平台后台、Excel数据整理与复盘</p>
+      </div>
+      <div class="p-5 rounded-lg bg-white shadow-sm border border-gray-100">
+        <h4 class="font-bold text-lg text-primary mb-2">直播执行 🎥</h4>
+        <p class="text-gray-600">中控操作、客服话术、全流程协助</p>
+      </div>
+      <div class="p-5 rounded-lg bg-white shadow-sm border border-gray-100">
+        <h4 class="font-bold text-lg text-primary mb-2">AI工具 🤖</h4>
+        <p class="text-gray-600">豆包、即梦AI、千问等提升创作效率</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-20 px-4 bg-white text-center">
+  <div class="container mx-auto max-w-4xl">
+    <h2 class="text-3xl md:text-4xl font-bold font-display mb-8 text-dark">
+      📞 联系我
+    </h2>
+    <div class="flex flex-col md:flex-row justify-center gap-8 text-lg">
+      <div class="p-4 rounded-lg bg-light border border-gray-100">
+        <p class="text-primary font-bold mb-1">📩 邮箱</p>
+        <p class="text-gray-700">9876543210@qq.com</p>
+      </div>
+      <div class="p-4 rounded-lg bg-light border border-gray-100">
+        <p class="text-primary font-bold mb-1">📱 手机号</p>
+        <p class="text-gray-700">12345678910</p>
+      </div>
+    </div>
+    <p class="mt-6 text-gray-600">💼 求职意向：新媒体运营、直播运营、内容运营</p>
+  </div>
+</section>
+
+<footer class="py-6 text-center text-gray-500 text-sm bg-light">
+  <p>© 2026 Tang Huiling · 个人简历展示网站 ✨</p>
+</footer>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray('section').forEach(section => {
+    gsap.from(section, {
+      opacity: 0, y: 40, duration: 0.8, ease: 'power2.out',
+      scrollTrigger: { trigger: section, start: 'top 80%' }
+    });
+  });
+
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.navbar');
+    nav.style.padding = window.scrollY > 50 ? '6px 0' : '12px 0';
+  });
+</script>
+</body>
+</html>
